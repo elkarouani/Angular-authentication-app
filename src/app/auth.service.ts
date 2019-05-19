@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 
+// interface myData {
+//   obj: Object
+// }
+
 @Injectable({
   providedIn: 'root'
 })
@@ -11,6 +15,6 @@ export class AuthService {
   }
 
   getData() {
-    return this.http.get('http://localhost:1234/file.php').subscribe(data => console.log(data))
+    return this.http.get('http://localhost:1235/file.php')
   }
 }
