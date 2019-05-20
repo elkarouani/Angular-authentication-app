@@ -11,6 +11,6 @@ export class AppComponent {
   constructor(private auth: AuthService) {}
 
   ngOnInit() {
-    this.auth.getData().subscribe(data => console.log(data));
+    this.auth.getData();
   }
 }

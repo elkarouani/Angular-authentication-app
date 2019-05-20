@@ -15,6 +15,6 @@ export class AuthService {
   }
 
   getData() {
-    return this.http.get('http://localhost:1235/file.php')
+    this.http.get('http://localhost:1235/api/file.php').subscribe(data => console.log(data))
   }
 }
