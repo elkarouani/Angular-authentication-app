@@ -1,8 +1,11 @@
 {
-    "/api/file.php": {
-        "target": "http://localhost:1235/api/file.php",
+    "/api/*": {
+        "target": "http://localhost:1235",
         "secure": false,
-        "logLevel": "debug",
-        "changeOrigin": true
+        "changeOrigin": true,
+        "pathRewrite": {
+          "http://localhost:4200/api": "http://localhost:1235/api"
+        }
     }
-}
+  }
+  
