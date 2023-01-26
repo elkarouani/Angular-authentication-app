@@ -23,7 +23,7 @@
     "core-js": "^2.5.4",
     "handlebars": "^4.3.0",
     "kind-of": "^6.0.3",
-    "lodash": "^4.17.12",
+    "lodash": "^4.17.21",
     "minimist": "^1.2.6",
     "rxjs": "~6.3.3",
     "serialize-javascript": "^2.1.1",
